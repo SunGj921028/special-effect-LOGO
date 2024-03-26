@@ -1,0 +1,29 @@
+:root{
+    --color0: #ffffff;
+    --color1: #525FE1;
+    --color2: #F86F03;
+    --color3: #FFA41B;
+    --color4: #FF4970;
+
+    background-color: #000000;
+}
+
+.logo-container{
+    padding: 100px;
+    display: grid;
+    place-content: center;
+}
+
+.main-logo{
+    --x: 0px;
+    --y: 0px;
+    font-size: 50px;
+    color: transparent; /*設置透明，希望每層都可以跟著滑鼠移動*/
+    transition: .4s linear;
+    text-shadow: 
+        calc(var(--x) * 5) calc(var(--y) * 5) 0px var(--color0),
+        calc(var(--x) * 4) calc(var(--y) * 4) 0px var(--color1),
+        calc(var(--x) * 3) calc(var(--y) * 3) 0px var(--color2),
+        calc(var(--x) * 2) calc(var(--y) * 2) 0px var(--color3),
+        calc(var(--x) * 1) calc(var(--y) * 1) 0px var(--color4);
+}
